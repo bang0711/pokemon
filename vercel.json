@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "@default": {
+      "maxDuration": 30
+    }
+  }
+}
