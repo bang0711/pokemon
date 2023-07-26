@@ -45,11 +45,6 @@ async function DashboardPage({}: Props) {
               />
               <p>{pokemon.pokemonName}</p>
               <p className="absolute top-1 left-1">{pokemon.pokemonId}</p>
-              {/* {isPokemonAdded ? (
-                <RemoveButton pokemon={pokemon} />
-              ) : (
-                <AddButton pokemon={pokemon} />
-              )} */}
             </div>
           ))}
         </div>
