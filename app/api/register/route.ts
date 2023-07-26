@@ -33,5 +33,12 @@ export async function POST(req: Request) {
       },
     },
   });
-  return NextResponse.json(user);
+  return NextResponse.json(user, {
+    status: 200,
+    headers: {
+      "Access-Control-Allow-Origin": "https://pokemon-lovat-five.vercel.app",
+      "Access-Control-Allow-Methods": "POST",
+      "Access-Control-Allow-Headers": "Content-Type",
+    },
+  });
 }
