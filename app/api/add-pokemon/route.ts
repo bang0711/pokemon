@@ -20,7 +20,6 @@ export async function POST(req: Request) {
       pokemons: true,
     },
   });
-  console.log(user);
   if (!user) {
     return new NextResponse("You have to log in first", { status: 400 });
   }
