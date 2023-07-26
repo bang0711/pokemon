@@ -12,7 +12,7 @@ function RegisterForm({}: Props) {
   const router = useRouter();
   const register = async (e: any) => {
     e.preventDefault();
-    await fetch("https://pokemon-lovat-five.vercel.app/api/register", {
+    await fetch("http://pokemon-lovat-five.vercel.app/api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
