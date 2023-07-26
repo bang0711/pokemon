@@ -12,7 +12,7 @@ function RegisterForm({}: Props) {
   const router = useRouter();
   const register = async (e: any) => {
     e.preventDefault();
-    await fetch("/api/register", {
+    await fetch("https://learn-authentication.vercel.app/api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
